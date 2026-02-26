@@ -4,8 +4,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
+
 public static class APIManager
 {
+    //https://dogapi.dog/docs/api-v2
     public const string BASE_URL = "https://dogapi.dog/api/v2/";
     public const string Breeds = "breeds";
     public static IEnumerator Get<T>(string route, Action<T> OnSuccess, Action<string> OnError)
